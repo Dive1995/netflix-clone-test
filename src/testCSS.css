@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+
+/*  id:2 
+.box{
+    height:200px;
+    width:200px;
+    background-color: cadetblue;
+    margin: 50px;
+    transition-duration: 1300ms;
+    /* transition-property: background,transform; */
+    /* if you set transition property the duration is gonna affect only those things  */
+    /* transition-timing-function: ease-out; */
+    /* 
+        -ease is the default
+        -linear goes in constant speed
+        -ease-in starts slow then fast
+        -ease-in start fast then slows down
+        -ease-in-out starts fase then slows and goes fast again
+    */
+    /* transition-delay: 1s; */
+    /* 
+        how long after should the animation start
+    */
+    /* transition: 1s 250ms background ease-in-out; */
+    /* first time is duration 2nd is delay */
+/* } */
+
+/* .box:hover{
+    background-color: rgb(80, 127, 255);
+    /* transform: rotate(45deg); */
+    /* width: 500px; */
+/* }  */
+
+
+/*  id:1
+    -if display is fixed it behaves like its is entirely removed from the html
+    -if all children are set to fixed, parent will be not displayed bcz it 
+    look like there are no children in the html right? (see the last one)
+*/
+
+/* .main{
+    background-color: blanchedalmond;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child1{
+    position: fixed;
+}
+.child2{
+    position: fixed;
+} */
+
+
+/**     **   ** *    **  * *    **   * **   **/
