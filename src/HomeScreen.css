@@ -1,0 +1,11 @@
+.detail{
+    position: fixed;
+    top:20vh;
+    max-height: 40vh;
+    /* max-width: 40vw; */
+    /* margin: 20px auto; */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    background-color: blanchedalmond;
+}
