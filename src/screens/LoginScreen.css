@@ -1,0 +1,98 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://muii.in/__export/1600794313496/sites/muiindia/img/2020/09/22/619306-bg-full-netflix-grid-v2_desktop.jpg_554688468.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.loginScreen__logo{
+    position: fixed;
+    width: 150px;
+    left: 0;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.loginScreen__login{
+    position: fixed;
+    right: 0;
+    background-color: rgb(231, 3, 49);
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight:600;
+    margin-right: 20px;
+    margin-top:30px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.login__background{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.loginScreen__gradient{
+    width:100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.loginScreen__body{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 30%;
+    padding: 20px;
+    /* width:80vw; */
+    left: 0;
+    right: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+}
+
+.loginScreen__body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginScreen__body > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.loginScreen__body > h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.loginScreen__input > form > input{
+    outline: none; 
+    /* removes outline when clicked */
+    /* also can use outline-width: 0; */
+    padding: 10px;
+    /* height: 30px; */
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+
+.loginScreen__getStarted{
+    padding: 10px 20px;
+    border: none;
+    /* font-size: 1rem; */
+    background-color: rgb(231, 3, 49);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
