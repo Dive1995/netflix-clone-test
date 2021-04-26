@@ -11,6 +11,7 @@
     left: 0;
     object-fit: contain;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .loginScreen__login{

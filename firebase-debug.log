@@ -1,0 +1,116 @@
+[debug] [2021-04-26T08:49:13.831Z] ----------------------------------------------------------------------
+[debug] [2021-04-26T08:49:13.832Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-04-26T08:49:13.833Z] CLI Version:   9.9.0
+[debug] [2021-04-26T08:49:13.833Z] Platform:      darwin
+[debug] [2021-04-26T08:49:13.833Z] Node Version:  v15.14.0
+[debug] [2021-04-26T08:49:13.834Z] Time:          Mon Apr 26 2021 14:19:13 GMT+0530 (India Standard Time)
+[debug] [2021-04-26T08:49:13.834Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-26T08:49:13.836Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-04-26T08:49:13.858Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-26T08:49:13.858Z] > authorizing via signed-in user (diveshan1995@gmail.com)
+[debug] [2021-04-26T08:49:13.859Z] [iam] checking project netflix-clone-9059e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-26T08:49:13.860Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-26T08:49:13.860Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-26T08:49:14.254Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 26 Apr 2021 08:49:14 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-26T08:49:14.312Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-9059e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-26T08:49:14.893Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-04-26T08:49:14.893Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-04-26T08:49:15.822Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 26 Apr 2021 08:49:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=951","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-26T08:49:15.825Z] > refreshing access token with scopes: []
+[debug] [2021-04-26T08:49:15.825Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-26T08:49:16.574Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 26 Apr 2021 08:49:16 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-26T08:49:16.633Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-9059e [none]
+[debug] [2021-04-26T08:49:17.467Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-9059e 200
+[debug] [2021-04-26T08:49:17.467Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-9059e {"projectId":"netflix-clone-9059e","projectNumber":"549371845779","displayName":"netflix-clone","name":"projects/netflix-clone-9059e","resources":{"hostingSite":"netflix-clone-9059e","storageBucket":"netflix-clone-9059e.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'netflix-clone-9059e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-04-26T08:49:17.472Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-26T08:49:17.473Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-26T08:49:18.205Z] <<< HTTP RESPONSE 200 {"date":"Mon, 26 Apr 2021 08:49:18 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-26T08:49:18.246Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/netflix-clone-9059e/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-04-26T08:49:20.326Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 26 Apr 2021 08:49:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[netflix-clone-9059e]: beginning deploy... 
+[info] i  hosting[netflix-clone-9059e]: found 16 files in build 
+[debug] [2021-04-26T08:49:20.871Z] > refreshing access token with scopes: []
+[debug] [2021-04-26T08:49:20.871Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-26T08:49:20.874Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2021-04-26T08:49:20.874Z] [hosting][hash queue][FINAL] {"max":525,"min":7,"avg":45.4375,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":532}
+[debug] [2021-04-26T08:49:21.377Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 26 Apr 2021 08:49:21 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-26T08:49:21.428Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/netflix-clone-9059e/versions/9a96c144223713d9:populateFiles [none]
+[debug] [2021-04-26T08:49:21.428Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/netflix-clone-9059e/versions/9a96c144223713d9:populateFiles {"files":{"/asset-manifest.json":"59a69ed3a0c67ee13fb4ff4671f8bc5c58e4a141ebac87611fa003f767d7f4b1","/index.html":"0f1dec9f03ee18f2b949c947380c7634afd0629bc76ef1fd07eecaf4adc25b01","/manifest.json":"341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900","/static/css/main.997c6c61.chunk.css.map":"4a72ec0b3eb68c6d7a7205d2a9600f817c601ac91e9b5884d49201a323fab39d","/favicon.ico":"c81fe46aa56ff717146af829dfdd7b9caa5caf51a1d8e65f6843335dec38c2f9","/static/js/2.38345d45.chunk.js.LICENSE.txt":"b6f37869541c28b177960116ede5de7a8af34d8c1d2400a22c08932fde0713af","/static/js/runtime-main.3a314151.js":"c2d50b877c9aebc60c0f6b72cb1fca49da844976ff1030f477e1e5455f2d32f6","/static/js/main.c4edb336.chunk.js":"78e14d8421b1c9f136a97f91079d6324cd53023af4ef5a030a916a04f8e0e0c2","/logo512.png":"95c6c19d1765afb5e489883a64de60caa980aa45c129eae52568585d660be15a","/static/js/runtime-main.3a314151.js.map":"76dbd3bd962b8aa25a36e30c91c919b95dbfece63bdd806adb5cb37eb1b14b8e","/static/css/main.997c6c61.chunk.css":"2654be17148126e4ecb31a911959b5ef84ccf95589a24d87067d816bccbc7798","/robots.txt":"381eb2c6776dd7924af6a6f8761e8720f5c7fb210451f07f2d13cf52af3073d2","/logo192.png":"b6d536a4ad34ade7f3e29832862aa72cf87c179a3c93752fc9097b31ae9e39ff","/static/js/main.c4edb336.chunk.js.map":"cc153c79e3df89391c1c014897b101d080b6aaf8d32f8d880d35451e083c67b4","/static/js/2.38345d45.chunk.js":"2452a7c4abf9f7b5769b728a6c36b56bbb6546f182f380f1bbdb744408559ef1","/static/js/2.38345d45.chunk.js.map":"8820480a78d9df4ec6f43382453b5de2866682b39c92a8a6a73aa2bdc1be6631"}}
+[debug] [2021-04-26T08:49:23.403Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/netflix-clone-9059e/versions/9a96c144223713d9:populateFiles 200
+[debug] [2021-04-26T08:49:23.403Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/netflix-clone-9059e/versions/9a96c144223713d9:populateFiles {"uploadRequiredHashes":["78e14d8421b1c9f136a97f91079d6324cd53023af4ef5a030a916a04f8e0e0c2","cc153c79e3df89391c1c014897b101d080b6aaf8d32f8d880d35451e083c67b4","8820480a78d9df4ec6f43382453b5de2866682b39c92a8a6a73aa2bdc1be6631","4a72ec0b3eb68c6d7a7205d2a9600f817c601ac91e9b5884d49201a323fab39d","2452a7c4abf9f7b5769b728a6c36b56bbb6546f182f380f1bbdb744408559ef1","2654be17148126e4ecb31a911959b5ef84ccf95589a24d87067d816bccbc7798","0f1dec9f03ee18f2b949c947380c7634afd0629bc76ef1fd07eecaf4adc25b01","59a69ed3a0c67ee13fb4ff4671f8bc5c58e4a141ebac87611fa003f767d7f4b1"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files"}
+[debug] [2021-04-26T08:49:23.407Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/78e14d8421b1c9f136a97f91079d6324cd53023af4ef5a030a916a04f8e0e0c2 [none]
+[debug] [2021-04-26T08:49:23.407Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/78e14d8421b1c9f136a97f91079d6324cd53023af4ef5a030a916a04f8e0e0c2 [stream]
+[debug] [2021-04-26T08:49:23.408Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/cc153c79e3df89391c1c014897b101d080b6aaf8d32f8d880d35451e083c67b4 [none]
+[debug] [2021-04-26T08:49:23.409Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/cc153c79e3df89391c1c014897b101d080b6aaf8d32f8d880d35451e083c67b4 [stream]
+[debug] [2021-04-26T08:49:23.410Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/8820480a78d9df4ec6f43382453b5de2866682b39c92a8a6a73aa2bdc1be6631 [none]
+[debug] [2021-04-26T08:49:23.410Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/8820480a78d9df4ec6f43382453b5de2866682b39c92a8a6a73aa2bdc1be6631 [stream]
+[debug] [2021-04-26T08:49:23.411Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/4a72ec0b3eb68c6d7a7205d2a9600f817c601ac91e9b5884d49201a323fab39d [none]
+[debug] [2021-04-26T08:49:23.412Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/4a72ec0b3eb68c6d7a7205d2a9600f817c601ac91e9b5884d49201a323fab39d [stream]
+[debug] [2021-04-26T08:49:23.412Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2452a7c4abf9f7b5769b728a6c36b56bbb6546f182f380f1bbdb744408559ef1 [none]
+[debug] [2021-04-26T08:49:23.412Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2452a7c4abf9f7b5769b728a6c36b56bbb6546f182f380f1bbdb744408559ef1 [stream]
+[debug] [2021-04-26T08:49:23.413Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2654be17148126e4ecb31a911959b5ef84ccf95589a24d87067d816bccbc7798 [none]
+[debug] [2021-04-26T08:49:23.413Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2654be17148126e4ecb31a911959b5ef84ccf95589a24d87067d816bccbc7798 [stream]
+[debug] [2021-04-26T08:49:23.414Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/0f1dec9f03ee18f2b949c947380c7634afd0629bc76ef1fd07eecaf4adc25b01 [none]
+[debug] [2021-04-26T08:49:23.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/0f1dec9f03ee18f2b949c947380c7634afd0629bc76ef1fd07eecaf4adc25b01 [stream]
+[debug] [2021-04-26T08:49:23.415Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/59a69ed3a0c67ee13fb4ff4671f8bc5c58e4a141ebac87611fa003f767d7f4b1 [none]
+[debug] [2021-04-26T08:49:23.415Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/59a69ed3a0c67ee13fb4ff4671f8bc5c58e4a141ebac87611fa003f767d7f4b1 [stream]
+[debug] [2021-04-26T08:49:23.416Z] [hosting][populate queue][FINAL] {"max":2536,"min":2536,"avg":2536,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2545}
+[debug] [2021-04-26T08:49:23.416Z] [hosting] uploads queued: 8
+[debug] [2021-04-26T08:49:27.679Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2654be17148126e4ecb31a911959b5ef84ccf95589a24d87067d816bccbc7798 200
+[debug] [2021-04-26T08:49:27.679Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2654be17148126e4ecb31a911959b5ef84ccf95589a24d87067d816bccbc7798 [stream]
+[debug] [2021-04-26T08:49:27.799Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/78e14d8421b1c9f136a97f91079d6324cd53023af4ef5a030a916a04f8e0e0c2 200
+[debug] [2021-04-26T08:49:27.799Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/78e14d8421b1c9f136a97f91079d6324cd53023af4ef5a030a916a04f8e0e0c2 [stream]
+[debug] [2021-04-26T08:49:28.079Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/4a72ec0b3eb68c6d7a7205d2a9600f817c601ac91e9b5884d49201a323fab39d 200
+[debug] [2021-04-26T08:49:28.079Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/4a72ec0b3eb68c6d7a7205d2a9600f817c601ac91e9b5884d49201a323fab39d [stream]
+[debug] [2021-04-26T08:49:28.694Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/cc153c79e3df89391c1c014897b101d080b6aaf8d32f8d880d35451e083c67b4 200
+[debug] [2021-04-26T08:49:28.694Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/cc153c79e3df89391c1c014897b101d080b6aaf8d32f8d880d35451e083c67b4 [stream]
+[debug] [2021-04-26T08:49:29.360Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/59a69ed3a0c67ee13fb4ff4671f8bc5c58e4a141ebac87611fa003f767d7f4b1 200
+[debug] [2021-04-26T08:49:29.360Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/59a69ed3a0c67ee13fb4ff4671f8bc5c58e4a141ebac87611fa003f767d7f4b1 [stream]
+[debug] [2021-04-26T08:49:29.659Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/0f1dec9f03ee18f2b949c947380c7634afd0629bc76ef1fd07eecaf4adc25b01 200
+[debug] [2021-04-26T08:49:29.660Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/0f1dec9f03ee18f2b949c947380c7634afd0629bc76ef1fd07eecaf4adc25b01 [stream]
+[debug] [2021-04-26T08:49:34.712Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2452a7c4abf9f7b5769b728a6c36b56bbb6546f182f380f1bbdb744408559ef1 200
+[debug] [2021-04-26T08:49:34.713Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/2452a7c4abf9f7b5769b728a6c36b56bbb6546f182f380f1bbdb744408559ef1 [stream]
+[debug] [2021-04-26T08:49:39.167Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/8820480a78d9df4ec6f43382453b5de2866682b39c92a8a6a73aa2bdc1be6631 200
+[debug] [2021-04-26T08:49:39.167Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/netflix-clone-9059e/versions/9a96c144223713d9/files/8820480a78d9df4ec6f43382453b5de2866682b39c92a8a6a73aa2bdc1be6631 [stream]
+[debug] [2021-04-26T08:49:39.168Z] [hosting][upload queue][FINAL] {"max":15762,"min":4274,"avg":7238.625,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":15764}
+[info] ✔  hosting[netflix-clone-9059e]: file upload complete 
+[debug] [2021-04-26T08:49:39.168Z] [hosting] deploy completed after 18840ms
+[debug] [2021-04-26T08:49:39.484Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "netflix-clone-9059e"
+    },
+    "site": "netflix-clone-9059e",
+    "version": "sites/netflix-clone-9059e/versions/9a96c144223713d9"
+  }
+]
+[info] i  hosting[netflix-clone-9059e]: finalizing version... 
+[debug] [2021-04-26T08:49:39.486Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-26T08:49:39.486Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-26T08:49:39.944Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 26 Apr 2021 08:49:40 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-26T08:49:40.002Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/netflix-clone-9059e/versions/9a96c144223713d9?updateMask=status  
+ {"status":"FINALIZED"}
